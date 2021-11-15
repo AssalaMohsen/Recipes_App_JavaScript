@@ -1,0 +1,270 @@
+:root {
+    scroll-behavior: unset !important;
+}
+
+body {
+    font-family: segoe ui light;
+    color: #000000;
+}
+
+a{
+    color: #fff !important;
+}
+
+header h2{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+
+
+/* Preloader Style */
+
+.preloader {
+    display: flex;
+    z-index: 9999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: #F9FDFF;
+}
+
+.spinner {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+    margin: 100px auto;
+}
+
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #bacecf;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+
+    0%,
+    100% {
+        -webkit-transform: scale(0.0)
+    }
+
+    50% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bounce {
+
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+
+.navbar{
+    background-color: transparent;
+    transition: all 1s;
+}
+
+.hide {
+    opacity: 0 !important;
+}
+
+.navbar-colored{
+    background-color:#bacecf;
+}
+
+
+.navbar-toggler:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.navbar-toggler:hover{
+    background-color: transparent;
+}
+.hero{
+    background-image: url(../images/pexels-ella-olsson-1640774.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(47, 82, 79, 0.4);
+    z-index: 3;
+}
+
+.z-10{
+    z-index: 10;
+}
+
+.input-field {
+    width: 100% !important;
+    padding: 12px 100px 12px 20px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+}
+.input-field::placeholder{
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+.input-field:focus {
+    outline: none;
+}
+
+button {
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background-color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+
+
+.active {
+    font-weight: bolder;
+}
+
+
+.nav-link {
+    position: relative;
+    color: #fff;
+    font-size: 16px;
+    white-space: nowrap;
+    transition: all .3s;
+    padding:10px 0 !important;
+    margin: 0 15px;
+}
+
+.nav-item:hover .nav-link {
+    color: #fff;
+}
+
+.nav-link:focus {
+    color: #fff;
+}
+
+.nav-link .underline {
+    position: absolute;
+    height: 3px;
+    width: 0;
+    left: 0;
+    background-color: #fff;
+    margin: 5px 0;
+    visibility: hidden;
+    transition: width .3s, visibility .2s;
+}
+
+.active .underline {
+    visibility: visible;
+    width: 80%;
+}
+
+.nav-item:hover .underline {
+    visibility: visible;
+    width: 80%;
+}
+
+#fixedBox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    transition: all 2s;
+    z-index: 99999;
+    /* display: none; */
+}
+
+
+#smallBox {
+    background: #f9fdff url(../images/1.png);
+    position: relative;
+    padding: 0 20px;
+    transition: all 2s;
+    overflow-y: scroll;
+    height: 90%;
+}
+
+#closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+i {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+img {
+    cursor: pointer;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style:none;
+}
+
+main{
+    background:#f9fdff url(../images/1.png);
+}
+
+.search-container{
+    top:100px;
+    width: 100%;
+
+}
+
+@media screen and (max-width:768px) {
+    header h2{
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+    #smallBox{
+        width: 90% !important;
+    }
+}

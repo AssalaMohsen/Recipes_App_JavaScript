@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Montserrat:300" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Recipes App</title>
+</head>
+
+<body>
+
+
+  <!-- preloader -->
+  <div class="preloader vh-100 justify-content-center align-items-center">
+    <div class="spinner">
+      <div class="double-bounce1"></div>
+      <div class="double-bounce2"></div>
+    </div>
+  </div>
+  <!-- end preloader -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3 pb-lg-0 pt-lg-2 px-2 px-md-5">
+      <div class="container-fluid d-flex justify-content-between p-md-0">
+        <a class="logo navbar-brand text-white fw-bolder p-0 m-0" href="#">RECIPES</a>
+        <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa fa-bars text-white"></i>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mx-3 mt-lg-0 w-100 justify-content-around">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Pizza<div class="underline"></div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Donuts<div class="underline"></div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Turke<div class="underline"></div>y</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Bacon<div class="underline"></div></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pasta<div class="underline"></div></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="hero d-flex position-relative">
+      <div class="overlay"></div>
+      <div class="container align-self-center z-10 position-relative" style="bottom:-130px;">
+        <div class="row text-center px-3 px-md-5 py-3">
+          <h2 class="text-white">
+            Never Miss a Recipe!
+          </h2>
+        </div>
+        <div class="row px-3 px-md-5 search-container text-center position-absolute">
+          <div class="p-0">
+            <input type="text" id="searchInput" class="input-field border-0 rounded-pill"
+              placeholder="Search over 1,000,000 Recipes..." autocomplete="off">
+          </div>
+          <div id="searchResults">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container pt-5">
+      <div class="row position-relative" id="data">
+
+      </div>
+    </div>
+  </main>
+
+  <section id="fixedBox" class="w-100 vh-100  d-none align-items-center justify-content-center">
+    <div id="smallBox" class="w-50 p-5">
+      <i class="fas fa-window-close" id="closeBtn"></i>
+      <div id="smallBoxData" class="d-flex flex-column align-items-center text-center">
+
+      </div>
+    </div>
+  </section>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
